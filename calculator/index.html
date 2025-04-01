@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="screen">
+            <span id="operation"></span>
+        </div>
+        <!-- Row de botones 7, 8, 9-->
+        <div class="container-btn">
+            <button class="button" onclick="addNumber(7)">7</button>
+            <button class="button" onclick="addNumber(8)">8</button>
+            <button class="button" onclick="addNumber(9)">9</button>
+            <button class="button" onclick="addNumber('x')">x</button>
+        </div>
+        <!-- Row de botones 4, 5, 6-->
+        <div class="container-btn">
+            <button class="button" onclick="addNumber(4)">4</button>
+            <button class="button" onclick="addNumber(5)">5</button>
+            <button class="button" onclick="addNumber(6)">6</button>
+            <button class="button" onclick="addNumber('-')">-</button>
+        </div>
+        <!-- Row de botones 1, 2, 3-->
+        <div class="container-btn">
+            <button class="button" onclick="addNumber(1)">1</button>
+            <button class="button" onclick="addNumber(2)">2</button>
+            <button class="button" onclick="addNumber(3)">3</button>
+            <button class="button" onclick="addNumber('+')">+</button>
+        </div>
+        <!-- Row de botones 0, =, ^-->
+        <div class="container-btn">
+            <button class="button" onclick="addNumber(0)">0</button>
+            <button class="button" onclick="addNumber('=')">=</button>
+            <button class="button" onclick="addNumber('^')">^</button>
+        </div>
+        <!-- Row de boton r-->
+        <div class="container-btn">
+            <button class="button" onclick="addNumber('r')">Reset</button>
+            <button class="button" onclick="addNumber('/')" style="position: relative; left: 78px;">/</button>
+
+        </div>
+    </div>
+    <div class="historial-cont">
+        <h1 id="historial">Historial</h1>
+        <ul id="history"></ul>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
